@@ -23,3 +23,8 @@ $ touch ~/Templates/"Untitled Document"  (Note: can do this with all file-types)
 $ chown user -R /home/user/Public
 $ sudo chown user:user /mnt/lookoverhere
 $ chown -R user:user /movies 
+
+### Install programs
+
+$ apt-get install gparted
+$ apt-get install texstudio
