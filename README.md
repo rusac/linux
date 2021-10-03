@@ -9,6 +9,11 @@
 $ apt-get update
 $ apt-get upgrade
 
+### Change background colour
+
+$ gsettings set org.gnome.desktop.background picture-options 'none'  
+$ gsettings set org.gnome.desktop.background primary-color '#000000'  
+
 ### Install video codecs if not already installed
 
 $ sudo add-apt-repository multiverse
