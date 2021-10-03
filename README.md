@@ -20,11 +20,11 @@ $ touch ~/Templates/"Untitled Document"  (Note: can do this with all file-types)
 
 ### Change ownership of storage drive
 
-$ chown user -R /home/user/Public
-$ sudo chown user:user /mnt/lookoverhere
+$ chown user -R /home/user/Public  
+$ sudo chown user:user /mnt/lookoverhere  
 $ chown -R user:user /movies 
 
 ### Install programs
 
-$ apt-get install gparted
+$ apt-get install gparted  
 $ apt-get install texstudio
