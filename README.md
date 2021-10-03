@@ -32,4 +32,6 @@ $ chown -R user:user /movies
 ### Install programs
 
 $ apt-get install gparted  
+
+$ sudo add-apt-repository ppa:sunderme/texstudio
 $ apt-get install texstudio
