@@ -50,3 +50,8 @@ $ apt-get install gparted
 
 $ sudo add-apt-repository ppa:sunderme/texstudio  
 $ apt-get install texstudio
+
+yt-dlp: see https://github.com/yt-dlp/yt-dlp for info  
+$ sudo wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /usr/local/bin/yt-dlp  
+$ sudo chmod a+rx /usr/local/bin/yt-dlp  
+
