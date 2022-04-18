@@ -55,27 +55,27 @@ yt-dlp: see https://github.com/yt-dlp/yt-dlp for info
 $ sudo wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /usr/local/bin/yt-dlp  
 $ sudo chmod a+rx /usr/local/bin/yt-dlp  
 
-# Docker install
-$ sudo apt update
-$ sudo apt upgrade
-$ sudo apt install docker.io
-$ sudo usermod -a -G docker $USER (so that there is no need to run in sudo)
+# Docker install  
+$ sudo apt update  
+$ sudo apt upgrade  
+$ sudo apt install docker.io  
+$ sudo usermod -a -G docker $USER (so that there is no need to run in sudo)  
 
-### To enable start at boot
-$ sudo systemctl start docker
-$ sudo systemctl enable docker
+### To enable start at boot  
+$ sudo systemctl start docker  
+$ sudo systemctl enable docker  
 
-### Stop and restart docker
-$ sudo systemctl stop docker
-$ sudo systemctl restart docker
+### Stop and restart docker  
+$ sudo systemctl stop docker  
+$ sudo systemctl restart docker  
 
-### To move install to a different drive
+### To move install to a different drive  
 
 
-### Other commands
-$ sudo docker ps (list docker containers with their IDs)
-$ docker ps -a (list all containers whether running or stopped)
-$ docker stop container_name_or_ID
-$ sudo docker cp sinegraph.jpg 17containerIDd9:/home/path/repo_images/
-$ sudo docker cp container:source_path host_destination_path
+### Other commands  
+$ sudo docker ps (list docker containers with their IDs)  
+$ docker ps -a (list all containers whether running or stopped)  
+$ docker stop container_name_or_ID  
+$ sudo docker cp sinegraph.jpg 17containerIDd9:/home/path/repo_images/  
+$ sudo docker cp container:source_path host_destination_path  
 
