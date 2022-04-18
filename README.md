@@ -55,3 +55,16 @@ yt-dlp: see https://github.com/yt-dlp/yt-dlp for info
 $ sudo wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /usr/local/bin/yt-dlp  
 $ sudo chmod a+rx /usr/local/bin/yt-dlp  
 
+### Docker install
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt install docker.io
+$ sudo usermod -a -G docker $USER (so that there is no need to run in sudo)
+
+### To enable start at boot
+$ sudo systemctl start docker
+$ sudo systemctl enable docker
+
+### Stop and restart docker
+$ sudo systemctl stop docker
+$ sudo systemctl restart docker
