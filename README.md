@@ -70,7 +70,7 @@ $ sudo systemctl stop docker
 $ sudo systemctl restart docker  
 
 ### To move install to a different drive  
-
+https://www.guguweb.com/2019/02/07/how-to-move-docker-data-directory-to-another-location-on-ubuntu/
 
 ### Other commands  
 $ sudo docker ps (list docker containers with their IDs)  
