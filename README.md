@@ -1,6 +1,6 @@
 # linux
 
-### Wifi
+### Wifi - older
 
 - howto
 - Set up tplink usb wifi - follow instructions here: https://askubuntu.com/questions/1334925/tp-link-archer-t3u-plus-doesnt-work  
@@ -17,6 +17,20 @@ Above uses this repository: https://github.com/RinCat/RTL88x2BU-Linux-Driver
 Some additional explanations here:
 - [How to Install a TP-LINK Adapter on Linux Ubuntu](https://community.tp-link.com/en/home/stories/detail/323)
 - [Install TP-Link AC600 Archer T2U Nano on Ubuntu](https://ostechnix.com/install-tp-link-ac600-archer-t2u-nano-wifi-usb-adapter-in-linux/)
+
+### Wifi - newer
+
+- howto setup tplink usb - follow instructions here: https://askubuntu.com/questions/1178802/proper-way-of-installing-wifi-drivers-rtl8822bu
+$ cd /var/lib/dkms
+remove or backup old directory
+$ git clone https://github.com/cilynx/rtl88x2bu.git
+$ cd rtl88x2bu
+$ VER=$(sed -n 's/\PACKAGE_VERSION="\(.*\)"/\1/p' dkms.conf)
+$ sudo rsync -rvhP ./ /usr/src/rtl88x2bu-${VER}
+$ sudo dkms add -m rtl88x2bu -v ${VER}
+$ sudo dkms build -m rtl88x2bu -v ${VER}
+$ sudo dkms install -m rtl88x2bu -v ${VER}
+$ sudo modprobe 88x2bu
 
 
 ### Some commands post-install
