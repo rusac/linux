@@ -121,6 +121,40 @@ Then enter
 w
 ```
 to write operations to disk.  
+### format drive
+```
+sudo mkfs -t ext4 /dev/sdb1
+```
+`-t` is used otherwise ext2 will be used by default? 
+
+### mount and unmount drive
+Create mount point(s):
+```
+sudo mkdir -p /mnt/audio /mnt/video 
+```
+Mount partition(s):
+```
+sudo mount /dev/sdb1 /mnt/audio
+sudo mount /dev/sdb2 /mnt/video 
+```
+
+### fstab to make automatic mount on reboot
+Locate file /etc/fstab  
+Find 'UUID' of device(s): 
+```
+sudo blkid
+```
+Edit /etc/fstab and enter the following lines: 
+```
+#external storage drive
+UUID="UUIDNUMBER"   /mnt/misclocation     ext4     defaults,nofail  0 0
+```
+
+
+
+
+
+
 
 
 
