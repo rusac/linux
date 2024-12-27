@@ -98,8 +98,18 @@ $ sudo docker cp container:source_path host_destination_path
 ### via terminal 
 
 ```
+# see available attached drives
 sudo fdisk -l
-sudo gdisk /dev/sdb
+# see available partitions on sdb
+sudo fdisk /dev/sdb
+# delete partitions by number
+d
+# verify partitions have been deleted
+p
+# write operations
+w
+
+
 ```
 
 
