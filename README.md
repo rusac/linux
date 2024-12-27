@@ -93,3 +93,13 @@ $ docker stop container_name_or_ID
 $ sudo docker cp sinegraph.jpg 17containerIDd9:/home/path/repo_images/  
 $ sudo docker cp container:source_path host_destination_path  
 
+# Storage External Drive Set up
+
+### via terminal 
+
+```
+sudo fdisk -l
+sudo gdisk /dev/sdb
+```
+
+
