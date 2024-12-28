@@ -150,6 +150,29 @@ Edit /etc/fstab and enter the following lines:
 UUID="UUIDNUMBER"   /mnt/misclocation     ext4     defaults,nofail  0 0
 ```
 
+# Cloning storage  
+
+### Install rclone 
+```
+sudo apt  install rclone  # version 1.60.1+dfsg-3ubuntu0.24.04.1
+```
+
+### Copy storage to storage
+```
+tmux 
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
