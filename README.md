@@ -157,11 +157,18 @@ UUID="UUIDNUMBER"   /mnt/misclocation     ext4     defaults,nofail  0 0
 sudo apt  install rclone  # version 1.60.1+dfsg-3ubuntu0.24.04.1
 ```
 
-### Copy storage to storage
+### Start tmux session
 ```
-tmux 
+tmux ls 	[list sessions]  
+tmux		[start session]  
+tmux new -s <session-name>	[start session with specific name]  
+tmux a -t mysession	[enter active session]  
+Ctrl + b  d 		[detach from session]  
 ```
-
+### Copy storage within tmux
+```
+rclone copy -vv sourcedirectory destdirectory
+```
 
 
 
