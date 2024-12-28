@@ -167,9 +167,9 @@ Ctrl + b  d 		[detach from session]
 ```
 ### Copy storage within tmux
 ```
-rclone copy -vv sourcedirectory destdirectory
+rclone copy -vv -P sourcedirectory destdirectory
 ```
-
+(-vv verbose; -P show progress)
 
 
 
