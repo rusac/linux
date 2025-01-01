@@ -172,8 +172,12 @@ rclone copy -vv -P sourcedirectory destdirectory
 (-vv verbose; -P show progress)
 
 
-
-
+### Change ownership of storage drive to allow copying to via ssh etc  
+```
+$ chown user -R /home/user/Public
+$ sudo chown user:user /mnt/lookoverhere
+$ chown -R user:user /movies
+```
 
 
 
